@@ -1,0 +1,228 @@
+{
+    "buttons":
+    {
+        "language": "Language",
+        "already_a_member": "Language"
+    },
+    "slider_text":
+    {
+        "Next": "Next",
+        "Panasonic": "Panasonic",
+        "HomaAndLiving": "Homes & Living"
+    },
+    "vistor":
+    {
+        "Memeber": "Already a Member",
+        "Connect": "or connect with",
+        "register": " Don't have an acount?Register Now"
+    },
+    "title":
+    {
+        "branches": "Choose your Location",
+        "contact": "Contact",
+        "works": "How it works",
+        "Notifications": "Notifications",
+        "Offer": "Offer",
+        "Panasonic": "Panasonic Products",
+        "new": "New Offers",
+        "Privacy": "Privacy policy",
+        "Products": "Products Panasonic",
+        "Redeem": "Redeem Your Watts",
+        "Settings": "Settings",
+        "Manarti": "My Manarti",
+        "Term": "Terms And Conditions",
+        "Transactions": "Transactions",
+        "Vouchers": "Vouchers",
+        "myVouchers": "My Vouchers",
+        "enquiry": "Enquiry Now",
+        "complaint": "Complaint",
+        "speak": "Speak to us",
+        "request": "Click here to attach a picture to your request",
+        "Gifts": " Gifts"
+    },
+    "forget":
+    {
+        "Phone": "Mobile Number",
+        "Send": "Send",
+        "Title": "Forgot Password Send"
+    },
+    "ChangePassword":
+    {
+        "change": "Change Password",
+        "Password": "Password",
+        "changePassword": "Change Password",
+        "PasswordConfirm": "Confirm Password"
+    },
+    "Verification":
+    {
+        "Title": "Verification",
+        "Msg": "We have sent you an access code",
+        "MsgData": "via SMS for Mobile number verifications",
+        "click": "Click here",
+        "code": "enter code here",
+        "resend": "Resend Code",
+        "viaSms": "Sent via SMS on this number"
+    },
+    "login":
+    {
+        "Title": "LOGIN",
+        "Email": "Email",
+        "Forget": "Forgot password ?",
+        "Now": "Login Now",
+        "Signby": "By signing up or logging in to this app, you agree to our Terms &amp; Conditions and Privacy Policy.",
+        "Password": " Password"
+    },
+    "register":
+    {
+        "First": "First Name",
+        "Last": "Last Name",
+        "Email": "Email",
+        "Phone": "Phone Number",
+        "Residency": "Residency ID",
+        "City": "Select City",
+        "Birth": "Birth Date",
+        "Marital": "Marital Status",
+        "Next": "Next",
+        "Password": "Password",
+        "PasswordConfirm": "Confirm Password",
+        "Term": "Terms and Conditions",
+        "reg": "Register",
+        "Agree": "Agree And Submit",
+        "Select": " Select"
+    },
+    "menu":{
+        "Profile":"My Profile",
+        "Contact":"Contact Us",
+        "How":" How it works",
+        "term":" Terms & conditions",
+        "Privacy":" Privacy policy",
+        "Privacy":" Privacy policy",
+        "Device":" Device / Hints",
+        "Logout":" Logout",
+        "Settings":"Settings"
+    },
+    "redeem":{
+        "title":"Panasonic  Products",
+        "Gifts":"Gifts",
+        "Vouchers":" Vouchers "
+    },
+    "gifts":{
+        "have":" You have",
+        "Watts":"Watts",
+        "redeem":"Redeem Now ",
+        "Expite":"Expite date ",
+        "get":"Get Gift for you ",
+        "expire":" Expire on "
+    },
+    "vouchers":{
+        "Watts":" Watts",
+        "Expire":"Expire on ",
+        "kwatt":"kwatt",
+        "Expite":"Expite date ",
+        "Redeem":"Redeem Now "
+    },
+    "user_profile":{
+        "first":" First Name",
+        "last":"Last Name",
+        "Mobile":"Mobile",
+        "Email":"Email",
+        "Birth":" Birth data ",
+        "Marital":"  Marital Status ",
+        "City":"City ",
+        "Residency":" Residency ID  "
+    },
+    "editProfile":{
+        "First":" First Name",
+        "edit":" edit",
+        "Last":"Last Name",
+        "Email":"Email",
+        "Phone":"Phone Number",
+        "Residency":" Residency ID ",
+        "Select":"  Select ",
+        "Birth":"Birth Date ",
+        "Residency":" Residency ID  "
+    },
+    "req":{
+        "valid":" Not Valid .",
+        "pass":" Not The Same Password .",
+        "right":"Please Write Right Code ."
+
+    },
+    "Notifications":{
+        "no":" No Notifications To "
+    },
+    "settings":{
+        "Change":" Change Password ",
+        "Language":"Language ",
+        "Alerts":" Alerts Sound "
+    },
+    "show_profile":{
+        "Active":" Active ",
+        "Expire":" Expire in ",
+        "days":" days ",
+        "Watts":" Watts ",
+        "Transactions":" Recent Transactions ",
+        "Coupons":" Available Coupons ",
+        "Expires":" Expire ",
+        "available":"Watts available to spend"
+    },
+    "cart":{
+        "Discover":" Discover a world of rewards ",
+        "available":" Watts available to spend"
+
+    },
+    "offers":{
+        "Available":" Available in branches ",
+        "Exists":" No Offer Exists ",
+        "map":" Show Map"
+
+    },
+    "products":{
+        "Available":" Available in branches ",
+        "Map":" Show Map"
+
+    },
+    "transactions":{
+        "Watts":" Watts "
+    },
+    "points":{
+        "Expired":" Expired ",
+        "Expire":" Expire ",
+        "available":" Watts available to spend "
+    },
+    "branch":{
+        "direction":"  get direction ",
+        "Nearby":"  Nearby ",
+        "min":"  min ",
+        "seconds":"Second",
+        "hour":"Hour",
+        "Contact":"  Contact "
+    },
+    "details":{
+        "MODEL":"  MODEL NO.  ",
+        "Watts":"  Watts  ",
+        "help":"  you need help? ",
+        "Search":"  Search now for nearby branch for you ",
+        "Watt":"  Watt ",
+        "Date":"  Date ",
+        "Expiry":"  Expiry date ",
+        "Let":"  Let’s Go "
+    },
+    "profile":{
+        "photo":"  your photo ",
+        "Welcome":"  Welcome ",
+        "first":"  this is your first login   ",
+        "complete":"   Please complete your data and enjoy ",
+        "Save":"  Save ",
+        "Findloc":"  Find Branch now ",
+        "area":"  Select Your Area ",
+        "Select":"  Select ",
+        "choose":"  Choose your Location ",
+        "Skip":"  Skip "
+    },
+    "messages":
+    {
+        "success": "Current language: __language__ (__local__) [__code__]",
+        "error": "Error getting language!"
+    }
+}

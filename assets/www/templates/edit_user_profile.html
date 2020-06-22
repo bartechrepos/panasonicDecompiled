@@ -1,0 +1,51 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar navbar_content">
+    <div class='navbar-inner d-none'>
+        <div class='left'>
+
+        </div>
+        <div class='center sliding'></div>
+        <div class='right'>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="edit_user_profile" class="page the_user_profile_page ">
+        <div class="page-content" id="">
+
+            <form method='post' class='ajax-submit' id='profile_edit_form'>
+
+
+                <div class=' profile_nav'>
+                    <div class='left'>
+                        <a href='#' class='link back'>
+                            <i class='fa fa-angle-left' aria-hidden='true'></i>
+                        </a>
+
+                    </div>
+                    <div class='center sliding'>
+                        <input type='submit' class='save btnSave'  value='Save' name='submit'>
+                        <div class='user_profile_img'>
+                            <input type='file' name='ProfileImage' onchange='readURL1(this);' id='profile_edit_form_ProfileImage'  accept='image/*;capture=camera'>
+
+                            <div class='img' style='background-image:url(images/test/profile_photo.png)'> </div>
+                        </div>
+                        <div class='u_data'>
+                            <div class='text_uppercase u_name'> </div>
+                            <div class='small u_email'></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="edit_user_profile  m_user_profile new_pd" id="edit_user_profile">
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

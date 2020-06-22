@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" android:hardwareAccelerated="true" package="com.arm.almanara" platformBuildVersionCode="10907" platformBuildVersionName="1.9.7">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:name="android.hardware.location.gps"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.location"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:debuggable="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true" android:usesCleartextTraffic="true">
+        <activity android:configChanges="keyboard|keyboardHidden|locale|orientation|screenSize" android:label="@string/activity_name" android:launchMode="singleTop" android:name="com.arm.almanara.MainActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:label="@string/launcher_name">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:name="com.transistorsoft.cordova.backgroundfetch.HeadlessJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.transistorsoft.cordova.backgroundfetch.HeadlessBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.arm.almanara.event.BACKGROUND_FETCH"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.transistorsoft.locationmanager.license" android:value="YOUR_LICENSE_KEY"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@string/fb_app_name"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/fb_app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <receiver android:enabled="true" android:name="com.google.android.gms.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAUnJgKV2QjJXDQIHDho358pFIF_ZYSH_E"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:enabled="true" android:name="nl.xservices.plugins.ShareChooserPendingIntent">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.arm.almanara.sharing.provider" android:exported="false" android:grantUriPermissions="true" android:name="nl.xservices.plugins.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sharing_paths"/>
+        </provider>
+        <receiver android:name="com.transistorsoft.tsbackgroundfetch.FetchAlarmReceiver"/>
+        <service android:exported="true" android:name="com.transistorsoft.tsbackgroundfetch.FetchJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.transistorsoft.tsbackgroundfetch.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.transistorsoft.locationmanager.BackgroundGeolocationService"/>
+        <service android:name="com.transistorsoft.locationmanager.LocationService"/>
+        <service android:name="com.transistorsoft.locationmanager.ActivityRecognitionService"/>
+        <service android:name="com.transistorsoft.locationmanager.geofence.GeofenceService"/>
+        <receiver android:name="com.transistorsoft.locationmanager.scheduler.ScheduleAlarmReceiver"/>
+        <service android:exported="true" android:name="com.transistorsoft.locationmanager.scheduler.ScheduleJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.transistorsoft.locationmanager.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.arm.almanara.tslocationmanager.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.transistorsoft.locationmanager.util.LogFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/tslocationmanager_file_provider_path"/>
+        </provider>
+        <activity android:excludeFromRecents="true" android:name="com.intentfilter.androidpermissions.PermissionsActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:name="com.facebook.CustomTabActivity"/>
+        <provider android:authorities="com.arm.almanara.MarketingInitProvider" android:exported="false" android:name="com.facebook.marketing.internal.MarketingInitProvider"/>
+        <provider android:authorities="com.arm.almanara.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+</manifest>

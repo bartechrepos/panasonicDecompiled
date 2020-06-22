@@ -1,0 +1,36 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar navbar_content">
+    <div class='navbar-inner gray'>
+        <div class='left'>
+            <a href='#' class='link icon-only open-panel'><img src='images/left_menu.png'/></a>
+
+        </div>
+        <div class='center sliding' data-i18n='title.Products' >title.Products</div>
+        <div class='right'>
+
+             <a href="#" class="item-link smart-select mx-2 d_in_flex" data-open-in="picker"  data-back-on-select='true'  data-form-theme="red">
+                <select name="products_filter" class="products_filter">
+                  <option value="Products" selected  data-i18n='title.Panasonic' >title.Panasonic  </option>
+                  <option value="Offers" data-i18n='title.new' >title.new</option>
+                </select>
+
+                <img src='images/filtter.png'/>
+
+              </a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="products" class="page">
+        <div class="page-content infinite-scroll infinite-scroll-products" data-distance="100" id="">
+            <div class="products" id="products">
+
+            </div>
+            <div class="infinite-scroll-preloader ">
+                <div class="preloader preloader-yellow"></div>
+            </div>
+        </div>
+    </div>
+</div>

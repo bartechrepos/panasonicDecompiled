@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+    https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+    * Enable inline JS: add 'unsafe-inline' to default-src
+-->
+<!--<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; script-src 'self'; style-src 'self' 'unsafe-inline'; media-src *;connect-src 'self'" />
+-->
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<!--<meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data:">
+-->
+<!--<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+-->
+<meta http-equiv="Content-Security-Policy" content="default-src *;
+   img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *;
+   style-src  'self' 'unsafe-inline' *">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<!-- Your app title -->
+<title>My App</title>
+
+<!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+-->
+<link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+<link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="popup popup-cart tablet-fullscreen ">
+   </div>
+    <div class="popup popup-points tablet-fullscreen ">
+   </div>
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <div class="loader-bg hidden"><div class="preloader color-white"></div></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal panel_content menu"></div>
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <div class="navbar navbar_content">
+                <div class="navbar-inner">
+
+                </div>
+            </div>
+            <div class="toolbar toolbar-bottom-md">
+            </div>
+            <div class="pages">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+
+                    <div class="page-content index">
+                        <!--- Start Slidr -->
+                        <!--    <div  class="swiper-container home-slider swiper-init" data-pagination=".swiper-pagination" data-space-between="0">
+                                        <img class='img-fluid intro-logo' src='images/almanara_logo.png'/>
+
+                                    <div class='home_text home__bottom_text text-center abs-pos'>
+                                        <div class='inner'>
+                                            <span class='bold'>Panasonic</span>
+                                            <span class='orange_colr'>Homes & Living</span>
+                                        </div>
+                                        <a  class='next' href='#' onclick='goToLang()'> Next</a>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-wrapper ">
+                                        <div class="swiper-slide" style='background:url(images/slide_1.jpg)' >
+                                            <div class='home_text des text-center abs-pos'>
+                                                <p class=''>
+                                                We <span class='bold'>DELIVER</span> Quality  <p> Just For  You</p>
+                                            </div>
+
+                                         </div>
+                                        <div class="swiper-slide" style='background:url(images/slide_2.jpg)'>
+
+                                            <div class='home_text des text-center abs-pos'>
+                                                <p class=''>
+                                                We <span class='bold'>DELIVER</span> Quality  <p> Just For  You</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="swiper-slide" style='background:url(images/slide_3.jpg)' >
+                                            <div class='home_text des text-center abs-pos'>
+                                                <p class=''>
+                                                We <span class='bold'>DELIVER</span> Quality  <p> Just For  You</p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>-->
+                 <!---End Slider -->
+                    </div>
+                </div>
+                <div class='connection-msg ' onclick="reinit()">There Are No Connection</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/framework7/js/framework7.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+<link rel="stylesheet" href="css/font-awesome.css">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUnJgKV2QjJXDQIHDho358pFIF_ZYSH_E" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" src="js/i18next.min.js"></script>
+<!--<script type="text/javascript" src="js/ln.js"></script>
+--><script>
+$(function () {
+
+    //then load the JavaScript file
+    $.getScript('js/ln.js');
+});
+</script>
+</body>
+</html>
